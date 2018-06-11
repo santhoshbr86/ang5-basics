@@ -1,0 +1,5 @@
+<div class="peekAboo">
+    <h1>Peek A Boo</h1>
+    <p *ngFor='let i of der'>{{i}}</p>
+</div>
+<app-child-passing [childMessage]="parentMessage" (messageEvent)="reciveMessage($event)"></app-child-passing>
